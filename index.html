@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Bootstrao CSS -->
+  <meta name="description" content="">
+  <link rel="icon" href="img/favicon.png">
+  <!-- Bootstrap CSS -->
   <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="mystyles/main.css">
   <title>Portfolio</title>
 </head>
 <body>
+  <header>
     <div class="bg-dark collapse" id="navbarHeader" style>
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
             <h4 class="text-white">About me</h4>
-            <p class="text-muted">Hi, my name is Denis. I'm Front End Developer living in Tallinn, Estonia. I primarily use vanilla js, but picking up a new framework isn't a problem.
+            <p class="custom-color-header">Hi, my name is Denis. I'm Front End Developer living in Tallinn, Estonia. I primarily use vanilla js, but picking up a new framework isn't a problem.
               I'm prepared for roles at a wide array of companies — from startups to global organizations.</p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
@@ -29,26 +32,56 @@
           </div>
         </div>
       </div>
-  </div>
+    </div>
 
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <i class="fas fa-id-card fa-lg icon-color mr-2"></i>
-        <strong>Portfolio</strong>
-      </a>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <i class="fas fa-id-card fa-lg icon-color mr-2"></i>
+          <strong>Portfolio</strong>
+        </a>
 
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <div style="font-size: 0.5rem;">
+              <i class="fas fa-bars fa-3x"></i>
+            </div>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Album example</h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <p>
+        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <!-- Container -->
     </div>
   </div>
 
-  <div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+</main>
+  <!-- Footer -->
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
   </div>
+</footer>
+  <!-- End footer -->
 
   <!-- My script -->
   <script src="scripts/main.js"></script>

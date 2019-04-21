@@ -60,12 +60,12 @@
         Fully responsive and dynamic user interfaces.
         Checkout my latest web software development portfolio projects.</p>
       <p class="custom-button">
-        <a href="#move" class="fas fa-chevron-circle-down fa-3x"></a>
+        <a href="#carousel-container" class="fas fa-chevron-circle-down fa-3x"></a>
       </p>
     </div>
   </section>
 
-  <div id="move" class="album py-5 bg-light">
+  <div id="carousel-container" class="album py-5 bg-light">
     <div class="container carousel-width">
       <!-- Carousel -->
       <div class="bd-example">
@@ -108,9 +108,13 @@
           </a>
         </div>
       </div>
-      <!-- Container -->
+      <!-- End of Carousel -->
+      <div class="project-container" ng-app="portfolioProject">
+        <div ng-include="'views/template.html'" ng-controller="ProjectCtrl as project"></div><!-- All projects goes here -->
+      </div>
     </div>
   </div>
+
 </main>
 
   <!-- Footer -->
@@ -125,7 +129,7 @@
             <a class="text-muted weight-custom" href="mailto:deniss.sdmitrijevs@gmail.com">
               denis@dmitriyev.me
             </a><br>
-          or drop a line in the form at the contact page<br>
+          <!-- or drop a line in the form at the contact page<br> -->
             <a class="text-muted weight-custom" href="#">Back to top</a>
         </p>
       </div>
@@ -140,5 +144,9 @@
   <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  <!-- angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/projects.js"></script>
 </body>
 </html>

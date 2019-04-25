@@ -57,18 +57,18 @@
     <div class="container">
       <h1 class="jumbotron-heading">Front End Web Developer</h1>
       <p class="lead text-muted">
-        Fully responsive and dynamic user interfaces.
+        Get fully responsive and dynamic user interface.
         Checkout my latest web software development portfolio projects.</p>
       <p class="custom-button">
-        <a href="#carousel-container" class="fas fa-chevron-circle-down fa-3x"></a>
+        <a href="#project-section" class="fas fa-chevron-circle-down fa-3x"></a>
       </p>
     </div>
   </section>
 
-  <div id="carousel-container" class="album py-5 bg-light">
-    <div class="container carousel-width">
-      <!-- Carousel -->
-      <div class="bd-example">
+  <!-- <div id="carousel-container" class="album py-5 bg-light">
+    <div class="container carousel-width"> -->
+
+      <!-- <div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -76,23 +76,23 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active"> -->
               <!-- <img src="img/matching.png" class="d-block w-100" alt="..."> -->
-              <div class="carousel-caption d-none d-md-block">
+              <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item"> -->
               <!-- <img src="..." class="d-block w-100" alt="..."> -->
-              <div class="carousel-caption d-none d-md-block">
+              <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item"> -->
               <!-- <img src="..." class="d-block w-100" alt="..."> -->
-              <div class="carousel-caption d-none d-md-block">
+              <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
               </div>
@@ -107,14 +107,16 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </div>
-      <!-- End of Carousel -->
-      <div class="project-container" ng-app="portfolioProject">
-        <div ng-include="'views/template.html'" ng-controller="ProjectCtrl as project"></div><!-- All projects goes here -->
-      </div>
-    </div>
-  </div>
+      </div> -->
 
+    <!-- </div>
+  </div> -->
+
+  <!-- All projects section -->
+  <div id="project-section" ng-app="portfolioProject">
+      <div ng-include="'views/template.html'" ng-controller="ProjectCtrl as project"></div>
+  </div>
+  <!-- End of All projects section -->
 </main>
 
   <!-- Footer -->
@@ -135,7 +137,7 @@
       </div>
   </div>
 </footer>
-  <!-- End footer -->
+  <!-- End of footer -->
 
   <!-- My script -->
   <script src="scripts/main.js"></script>
@@ -146,7 +148,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
   <!-- angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <!-- module -->
   <script src="scripts/app.js"></script>
+  <!-- controller -->
   <script src="scripts/controllers/projects.js"></script>
 </body>
 </html>

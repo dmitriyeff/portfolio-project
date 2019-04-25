@@ -3,5 +3,8 @@
 angular
   .module('portfolioProject')
   .controller('ProjectCtrl', function () {
-    this.name = "Testing Angular";
+
+    this.id = "memory-game";
+    this.name = "Memory Game";
+    this.description = "Build an interactive browser-based card matching game with combined skills in HTML, CSS, and JavaScript";
   });

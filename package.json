@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/dmitriyeff/portfolio-project.git"
   },
-  "author": "Denis Dmitriyev",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dmitriyeff/portfolio-project/issues"
@@ -23,5 +23,5 @@
     "gulp": "^4.0.1",
     "gulp-sass": "^4.0.2"
   },
-  "description": "portfolio project"
+  "description": ""
 }

@@ -116,11 +116,15 @@
       <div ng-include="'views/template.html'" ng-controller="ProjectCtrl as project"></div>
   </div>
   <!-- End of All projects section -->
+  <!-- Scroll Back Button -->
+  <button class="btn btn-default btn-circle" type="button" id="backBtn" onclick="topFunction()" title="Go to top button">
+    <i class="fas fa-chevron-circle-up fa-4x"></i>
+  </button>
 </main>
 
   <!-- Footer -->
 <footer>
-  <div class="container">
+  <div class="container footer-container">
 
       <div class="footer-custom">
         <h4>Let's talk</h4>
@@ -131,7 +135,6 @@
               denis@dmitriyev.me
             </a><br>
           <!-- or drop a line in the form at the contact page<br> -->
-            <a class="link-custom" href="#">Back to top</a>
         </p>
       </div>
   </div>

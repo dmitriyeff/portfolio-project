@@ -1,5 +1,5 @@
 $theme-colors: (
-  "dark": #20c997
+  "dark": #009768
   );
 
 .fa-bars {
@@ -14,6 +14,10 @@ html {
 
 body {
   font-size: 1.2rem;
+}
+
+h4 {
+  padding-top: 0.7rem;
 }
 
 .jumbotron-heading {
@@ -36,15 +40,6 @@ body {
   margin-top: 30px;
 }
 
-.fa-chevron-circle-down {
-  color: #495057;
-}
-
-.fa-chevron-circle-down:hover {
-  color: #20c997;
-  text-decoration: none;
-}
-
 .carousel-item {
   width: 100%;
   height: 400px;
@@ -57,10 +52,9 @@ body {
 
 .footer-custom {
   text-align: center;
-  margin-top: 5px;
 }
 
-.weight-custom {
+.link-custom {
   font-weight: 700;
 }
 
@@ -87,3 +81,30 @@ body {
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
 }
+
+button.navbar-toggler:focus {
+   outline: 1px none;
+}
+
+.hamburger:hover {
+  color: #212529;
+}
+
+.footer-custom a {
+  color: #212529;
+}
+
+footer {
+  height: 100%;
+  background-color: #50c995;
+}
+
+.btn-secondary {
+  background-color: #009768;
+}
+
+.btn-secondary:hover {
+  background-color: #00683c;
+}
+
+// hover on link - footer

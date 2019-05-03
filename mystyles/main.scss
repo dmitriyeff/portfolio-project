@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-size: 1.2rem;
+}
+
 .jumbotron-heading {
   font-weight: 300;
 }
@@ -62,4 +66,8 @@ html {
 
 .text-margin {
   margin-bottom: 5px;
+}
+
+.lead {
+  font-weight: normal;
 }

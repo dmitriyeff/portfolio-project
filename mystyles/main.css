@@ -7026,6 +7026,9 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   scroll-behavior: smooth; }
 
+body {
+  font-size: 1.2rem; }
+
 .jumbotron-heading {
   font-weight: 300; }
 
@@ -7062,3 +7065,9 @@ html {
 
 .weight-custom {
   font-weight: 700; }
+
+.text-margin {
+  margin-bottom: 5px; }
+
+.lead {
+  font-weight: normal; }

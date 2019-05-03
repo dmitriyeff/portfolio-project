@@ -5,12 +5,12 @@
       <div class="col-md-6" ng-repeat="item in project.items">
         <div class="card mb-4 box-shadow">
 
-           <img class="card-img-top" data-src="" alt="" style="height: 225px; width: 100%; display: block;" src="">
+           <img class="card-img-top" data-src="{{item.img}}" alt="" style="width: 100%; display: block;" src="">
 
            <div class="card-body">
              <h4>{{item.name}}</h4>
              <p>{{item.description}}</p>
-             <button class="pr-btn btn btn-secondary">Open</button>
+             <button class="btn btn-secondary">Open</button>
            </div>
 
         </div>

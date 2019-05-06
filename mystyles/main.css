@@ -7153,3 +7153,11 @@ footer {
 
 .hamburger:hover div {
   width: 100%; }
+
+.filter-container {
+  height: 150px;
+  background-color: #E1E2E1; }
+
+.btn-primary {
+  margin-left: 25px;
+  margin-top: 50px; }

@@ -4,7 +4,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById('backBtn').style.visibility = "visible";
   } else {
     document.getElementById('backBtn').style.visibility = "hidden";

@@ -1,3 +1,8 @@
+  <!-- filter here -->
+<div class="filter-container">
+
+  </div>
+</div>
 
 <div class="album py-5 bg-light">
   <div class="container">
@@ -5,17 +10,15 @@
       <div class="col-md-6" ng-repeat="item in project.items">
         <div class="card mb-4 shadow">
 
-           <img class="card-img-top" data-src="{{item.img}}" alt="" style="width: 100%; display: block;" src="">
+           <img class="card-img-top" alt="{{item.name}}" style="width: 100%; display: block;" src="{{item.img}}">
 
            <div class="card-body">
              <h4>{{item.name}}</h4>
              <p>{{item.description}}</p>
              <button class="btn btn-secondary btn-lg one-edge-shadow">Open</button>
            </div>
-
         </div>
       </div>
     </div>
-    <!-- <button>More</button> -->
   </div>
 </div>

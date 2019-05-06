@@ -1,10 +1,8 @@
-  <!-- filter here -->
-<div class="filter-container">
-
-  </div>
-</div>
 
 <div class="album py-5 bg-light">
+    <div class="btn-container">
+          <button class="all-btn" type="button" name="button" ng-repeat="item in project.items">{{item.name}}</button>
+    </div>
   <div class="container">
     <div class="row">
       <div class="col-md-6" ng-repeat="item in project.items">

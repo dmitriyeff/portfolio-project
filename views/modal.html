@@ -1,0 +1,33 @@
+<div class="album py-5 bg-light">
+
+  <div class="container">
+    <div class="btn-container">
+        <button class="all-btn" type="button" data-toggle="modal" data-target="#myModal" name="button" ng-repeat="item in modal.items">{{item.name}}</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+        <div class="col-md-12" ng-repeat="item in modal.items">
+
+          <div class="card mb-4 shadow">
+             <img class="card-img-top" alt="{{item.name}}" style="width: 100%; display: block;" src="{{item.img}}">
+             <div class="card-body">
+               <h4>{{item.name}}</h4>
+               <p>{{item.description}}</p>
+               <button class="btn btn-secondary btn-lg one-edge-shadow">Open</button>
+               <button type="button" class="btn btn-gray btn-lg one-edge-shadow" data-dismiss="modal">Close</button>
+             </div>
+          </div>
+
+        </div>
+
+
+
+  </div>
+</div>

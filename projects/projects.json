@@ -3,30 +3,35 @@
     "id": "memory-game",
     "name": "Memory Game",
     "description": "Built an interactive browser-based card matching game with combined skills in HTML, CSS, and JavaScript.",
-    "img": "img/memory-done.png"
+    "img": "img/memory-done.png",
+    "url": "https://github.com/dmitriyeff/memory_game"
   },
   {
     "id": "arcade-game",
     "name": "Classic Arcade Game Clone",
     "description": "Leveraged object-oriented JavaScript to build a classic arcade game.",
-    "img": "img/arcade-done.png"
+    "img": "img/arcade-done.png",
+    "url": "https://github.com/dmitriyeff/arcadeGame"
   },
   {
     "id": "vat-validation",
     "name": "Vat validation form",
     "description": "VAT validation form is a simple app that checks if entered vat number is valid.",
-    "img": "img/validation.png"
+    "img": "img/validation.png",
+    "url": "https://github.com/dmitriyeff/vat-validation-form"
   },
   {
     "id": "restaurant-app",
     "name": "Restaurant Reviews App",
     "description": "Converted a static webpage to be responsive on different sized displays, and accessible for screen reader use.",
-    "img": "img/restaurant-done.png"
+    "img": "img/restaurant-done.png",
+    "url": "https://github.com/dmitriyeff/restaurant-review-app"
   },
   {
     "id": "feed-reader",
     "name": "Feed Reader Testing",
     "description": "Used Jasmine to develop tests against a pre-existing web application.",
-    "img": "img/jasmine-done.png"
+    "img": "img/jasmine-done.png",
+    "url": "https://github.com/dmitriyeff/Feed-Reader-Testing-project"
   }
 ]

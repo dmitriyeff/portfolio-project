@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="">
   <link rel="icon" href="img/bars-solid.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <!-- Bootstrap CSS -->
   <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -67,9 +68,9 @@
     </div>
   </section>
 
-  <!-- All projects section -->
+  <!-- projects section -->
   <div id="project-section" ng-app="portfolioProject">
-      <div ng-include="'views/template.html'" ng-controller="ProjectCtrl as project"></div>
+      <div ng-include="'views/all-projects.html'" ng-controller="ProjectCtrl as project"></div>
   </div>
   <!-- End of All projects section -->
 
@@ -110,5 +111,6 @@
   <script src="scripts/app.js"></script>
   <!-- controller -->
   <script src="scripts/controllers/projects.js"></script>
+  <script src="scripts/services/projects-info.js"></script>
 </body>
 </html>

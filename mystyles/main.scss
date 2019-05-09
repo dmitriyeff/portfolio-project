@@ -1,5 +1,6 @@
 $theme-colors: (
   "dark": #009768,
+  "secondary": #00683c
   );
 
 .fa-bars {
@@ -18,6 +19,10 @@ body {
 
 h4 {
   padding-top: 0.7rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .jumbotron-heading {
@@ -111,9 +116,9 @@ footer {
   background-color: #00683c;
 }
 
-.btn-secondary:focus {
-  background-color: #00683c !important;
-}
+// .btn-secondary:focus {
+//   background-color: #00683c !important;
+// }
 
 // back to top button
 #backBtn {
@@ -170,27 +175,40 @@ footer {
   width: 100%;
 }
 
-.filter-container {
-  height: 150px;
-  background-color: #E1E2E1;
-}
-
 .btn-primary {
   margin-left: 25px;
   margin-top: 50px;
 }
 
-// .list-projects {
-//   display: inline-block;
-// }
-
 .btn-container {
-  margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .all-btn {
-  margin: 0 5px 5px 5px;
+  margin: 0 5px 10px 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.modal-dialog {
+  pointer-events: auto;
+  max-width: 450px;
+}
+
+.btn-gray {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-gray:hover {
+  background-color: #545b62;
+  color: white;
+}
+
+.btn-gray:focus {
+  background-color: #3d3535;
 }

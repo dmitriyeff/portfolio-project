@@ -2,37 +2,15 @@
 
 angular
   .module('portfolioProject')
-  .controller('ProjectCtrl', function () {
-    this.items = [
-      {
-        id: "memory-game",
-        name: "Memory Game",
-        description: "Built an interactive browser-based card matching game with combined skills in HTML, CSS, and JavaScript.",
-        img: "img/memory-done.png"
-      },
-      {
-        id: "arcade-game",
-        name: "Classic Arcade Game Clone",
-        description: "Leveraged object-oriented JavaScript to build a classic arcade game.",
-        img: "img/arcade-done.png"
-      },
-      {
-        id: "vat-validation",
-        name: "Vat validation form",
-        description: "VAT validation form is a simple app that checks if entered vat number is valid.",
-        img: "img/validation.png"
-      },
-      {
-        id: "restaurant-app",
-        name: "Restaurant Reviews App",
-        description: "Converted a static webpage to be responsive on different sized displays, and accessible for screen reader use.",
-        img: "img/restaurant-done.png"
-      },
-      {
-        id: "feed-reader",
-        name: "Feed Reader Testing",
-        description: "Used Jasmine to develop tests against a pre-existing web application.",
-        img: "img/jasmine-done.png"
-      }
-    ];
-  })
+  .controller('ProjectCtrl', ['projectsInfo', function(info) {
+    var vm = this;
+
+    info.getProjects().then(function(response) {
+      vm.items = response.data;
+
+      // vm.items.forEach(function(item) {
+      //   console.log(item.id);
+      // });
+    });
+
+  }]);

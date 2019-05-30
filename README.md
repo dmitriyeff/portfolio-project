@@ -1,7 +1,7 @@
 # Personal Portfolio Site
 
 Portfolio Site is a responsive website that displays images, descriptions, and links to each of the portfolio projects I have completed throughout the course of Udacity Nanodegree program.
-Website was built using Angular framework.
+Website was built with Angular using Bootstrap.
 
 ## Installation
 

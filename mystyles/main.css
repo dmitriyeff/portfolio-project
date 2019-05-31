@@ -7183,3 +7183,7 @@ footer {
 
 .btn-gray:focus {
   background-color: #3d3535; }
+
+.pagination-style {
+  display: flex;
+  border-radius: 0.4rem; }

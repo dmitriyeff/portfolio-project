@@ -4,13 +4,14 @@ angular
   .module('portfolioProject')
   .controller('ProjectCtrl', ['projectsInfo', function(info) {
     var vm = this;
+    vm.pageSize = 3;
+    vm.currentPage = 1;
 
     info.getProjects().then(function(response) {
       vm.items = response.data;
-
-      // vm.items.forEach(function(item) {
-      //   console.log(item.id);
-      // });
     });
 
+    vm.addCustomClass = function() {
+       angular.element(document.querySelector(".pagination")).addClass("customClass");
+    }
   }]);

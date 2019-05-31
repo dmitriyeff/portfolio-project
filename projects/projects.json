@@ -2,7 +2,7 @@
   {
     "id": "memory-game",
     "name": "Memory Game",
-    "description": "Built an interactive browser-based card matching game with combined skills in HTML, CSS, and JavaScript.",
+    "description": "Built an interactive card matching game with combined skills in HTML, CSS, and JavaScript.",
     "img": "img/memory-done.png",
     "url": "https://github.com/dmitriyeff/memory_game"
   },
@@ -23,14 +23,14 @@
   {
     "id": "restaurant-app",
     "name": "Restaurant Reviews App",
-    "description": "Converted a static webpage to be responsive on different sized displays, and accessible for screen reader use.",
+    "description": "Implemented responsive design, accessibility and offline use.",
     "img": "img/restaurant-done.png",
     "url": "https://github.com/dmitriyeff/restaurant-review-app"
   },
   {
     "id": "feed-reader",
     "name": "Feed Reader Testing",
-    "description": "Used Jasmine to develop tests against a pre-existing web application.",
+    "description": "Developed tests against a pre-existing web application.",
     "img": "img/jasmine-done.png",
     "url": "https://github.com/dmitriyeff/Feed-Reader-Testing-project"
   }

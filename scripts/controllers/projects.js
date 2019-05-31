@@ -4,7 +4,7 @@ angular
   .module('portfolioProject')
   .controller('ProjectCtrl', ['projectsInfo', function(info) {
     var vm = this;
-    vm.pageSize = 3;
+    vm.pageSize = 4;
     vm.currentPage = 1;
 
     info.getProjects().then(function(response) {

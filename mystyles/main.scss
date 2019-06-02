@@ -217,3 +217,25 @@ footer {
   display: flex;
   border-radius: 0.4rem;
 }
+
+.pag {
+  width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: -webkit-max-content;
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #009768;
+  border-color: #009768;
+}
+
+.page-link {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+  color: #000;
+}

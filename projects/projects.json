@@ -28,6 +28,13 @@
     "url": "https://github.com/dmitriyeff/restaurant-review-app"
   },
   {
+    "id": "vue-routing",
+    "name": "Routing in Vue.js",
+    "description": "Implemented navigation between pages without page refreshing.",
+    "img": "img/catbase-done.png",
+    "url": "https://bitbucket.org/denisdmitriyeff/routing-in-vuejs/src/master/vue-router/"
+  },
+  {
     "id": "feed-reader",
     "name": "Feed Reader Testing",
     "description": "Developed tests against a pre-existing web application.",

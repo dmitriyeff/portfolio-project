@@ -9,13 +9,13 @@
            <div class="card-body">
              <h4>{{item.name}}</h4>
              <p>{{item.description}}</p>
-               <a class="button btn btn-secondary btn-lg one-edge-shadow" href="{{item.url}}" target="_blank" style="text-decoration: none;">Open</a>
+               <a class="btn btn-secondary btn-lg" href="{{item.url}}" target="_blank" style="text-decoration: none;">Open</a>
            </div>
         </div>
       </div>
     </div>
       <div>
-        <ul onclick="topFunction()" class="pagination pag shadow" uib-pagination total-items="project.items.length" ng-model="project.currentPage" items-per-page="project.pageSize"></ul>
+        <ul onclick="topFunction()" target="_blank" class="pagination pag shadow" uib-pagination total-items="project.items.length" ng-model="project.currentPage" items-per-page="project.pageSize"></ul>
       </div>
 
   </div>

@@ -7128,6 +7128,7 @@ footer {
   outline-style: none;
   box-shadow: 0 0 0 0 rgba(0, 123, 255, 0); }
 
+/* hamburger */
 .hamburger {
   display: flex;
   align-self: center;
@@ -7165,13 +7166,6 @@ footer {
 
 .all-btn {
   margin: 0 5px 10px 5px; }
-
-.hide {
-  display: none; }
-
-.modal-dialog {
-  pointer-events: auto;
-  max-width: 450px; }
 
 .btn-gray {
   background-color: #6c757d;

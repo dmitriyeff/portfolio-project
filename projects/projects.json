@@ -32,7 +32,7 @@
     "name": "Routing in Vue.js",
     "description": "Implemented navigation between pages without page refreshing.",
     "img": "img/catbase-done.png",
-    "url": "https://bitbucket.org/denisdmitriyeff/routing-in-vuejs/src/master/vue-router/"
+    "url": "https://bitbucket.org/denisdmitriyeff/routing-in-vuejs/src/master/"
   },
   {
     "id": "feed-reader",
@@ -40,5 +40,12 @@
     "description": "Developed tests against a pre-existing web application.",
     "img": "img/jasmine-done.png",
     "url": "https://github.com/dmitriyeff/Feed-Reader-Testing-project"
+  },
+  {
+    "id": "moves-knight",
+    "name": "Possible moves of knight",
+    "description": "Made chessboard with possible knight moves from the chosen position.",
+    "img": "img/chess-done.png",
+    "url": "https://bitbucket.org/denisdmitriyeff/possible-moves-of-knight/src/master/"
   }
 ]

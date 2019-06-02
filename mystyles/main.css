@@ -7188,6 +7188,7 @@ footer {
   display: flex;
   border-radius: 0.4rem; }
 
+/* pagination */
 .pag {
   width: intrinsic;
   /* Safari/WebKit uses a non-standard name */
@@ -7207,3 +7208,7 @@ footer {
 
 .page-link:hover {
   color: #000; }
+
+.page-link:active, .page-link:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0; }

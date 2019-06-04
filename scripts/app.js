@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('portfolioProject', ['ui.bootstrap', 'ngRoute'])
+  .module('portfolioProject', ['ui.bootstrap'])
 
 angular
   .module('portfolioProject')

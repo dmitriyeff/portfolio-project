@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 $theme-colors: (
   "dark": #009768,
   "secondary": #00683c
@@ -9,10 +11,6 @@ $theme-colors: (
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  font-size: 1.2rem;
 }
 
 h4 {
@@ -67,10 +65,6 @@ ul {
 
 .lead {
   font-weight: normal;
-}
-
-.navbar {
-  height: 80px;
 }
 
 .one-edge-shadow {
@@ -236,5 +230,3 @@ footer {
     outline: 0;
     box-shadow: 0 0 0 0;
 }
-
-@import "../node_modules/bootstrap/scss/bootstrap";

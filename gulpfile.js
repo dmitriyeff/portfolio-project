@@ -21,6 +21,10 @@ var paths = {
   jsonmin: {
     src: './projects/**/*.json',
     dest: 'build/projects/'
+  },
+  views: {
+    src: './views/**/*.html',
+    dest: 'build/views/'
   }
 };
 
@@ -37,6 +41,11 @@ function clean() {
 /*
  * Define our tasks using plain functions
  */
+function views() {
+  return gulp.src(paths.views.src)
+        .pipe(gulp.dest(paths.views.dest));
+}
+
 function jsonmin() {
    return gulp.src(paths.jsonmin.src)
        .pipe(jsonminify())
@@ -78,7 +87,7 @@ function watch() {
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.series(clean, gulp.parallel(styles, scripts, jsonmin));
+var build = gulp.series(clean, gulp.parallel(styles, scripts, jsonmin, views));
 
 /*
  * You can use CommonJS `exports` module notation to declare tasks
@@ -87,6 +96,7 @@ exports.clean = clean;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.jsonmin = jsonmin;
+exports.views = views;
 exports.watch = watch;
 exports.build = build;
 /*

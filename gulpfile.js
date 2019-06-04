@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var cleanCSS = require('gulp-clean-css');
 var del = require('del');
+var jsonminify = require('gulp-jsonminify');
 const browserSync = require('browser-sync').create();
 
 var paths = {
@@ -17,6 +18,10 @@ var paths = {
     src: './scripts/**/*.js',
     dest: 'assets/scripts/'
   },
+  jsonmin: {
+    src: './projects/**/*.json',
+    dest: 'build/projects/'
+  }
 };
 
 /* Not all tasks need to use streams, a gulpfile is just another node program
@@ -32,6 +37,12 @@ function clean() {
 /*
  * Define our tasks using plain functions
  */
+function jsonmin() {
+   return gulp.src(paths.jsonmin.src)
+       .pipe(jsonminify())
+       .pipe(gulp.dest(paths.jsonmin.dest));
+}
+
 function styles() {
   return gulp.src(paths.styles.src)
     .pipe(sass())
@@ -67,7 +78,7 @@ function watch() {
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.series(clean, gulp.parallel(styles, scripts));
+var build = gulp.series(clean, gulp.parallel(styles, scripts, jsonmin));
 
 /*
  * You can use CommonJS `exports` module notation to declare tasks
@@ -75,6 +86,7 @@ var build = gulp.series(clean, gulp.parallel(styles, scripts));
 exports.clean = clean;
 exports.styles = styles;
 exports.scripts = scripts;
+exports.jsonmin = jsonmin;
 exports.watch = watch;
 exports.build = build;
 /*

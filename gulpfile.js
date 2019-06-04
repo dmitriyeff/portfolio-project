@@ -25,6 +25,10 @@ var paths = {
   views: {
     src: './views/**/*.html',
     dest: 'build/views/'
+  },
+  images: {
+    src: './img/**/*.{jpg,jpeg,png}',
+    dest: 'build/img/'
   }
 };
 
@@ -41,6 +45,11 @@ function clean() {
 /*
  * Define our tasks using plain functions
  */
+ function images() {
+   return gulp.src(paths.images.src)
+     .pipe(gulp.dest(paths.images.dest));
+ }
+
 function views() {
   return gulp.src(paths.views.src)
         .pipe(gulp.dest(paths.views.dest));
@@ -87,7 +96,7 @@ function watch() {
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.series(clean, gulp.parallel(styles, scripts, jsonmin, views));
+var build = gulp.series(clean, gulp.parallel(styles, scripts, jsonmin, views, images));
 
 /*
  * You can use CommonJS `exports` module notation to declare tasks
@@ -97,6 +106,7 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.jsonmin = jsonmin;
 exports.views = views;
+exports.images = images;
 exports.watch = watch;
 exports.build = build;
 /*

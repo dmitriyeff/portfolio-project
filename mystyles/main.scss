@@ -7,8 +7,6 @@ $theme-colors: (
   color: #fff;
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-
 html {
   scroll-behavior: smooth;
 }
@@ -238,3 +236,5 @@ footer {
     outline: 0;
     box-shadow: 0 0 0 0;
 }
+
+@import "../node_modules/bootstrap/scss/bootstrap";

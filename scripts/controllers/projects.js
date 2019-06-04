@@ -1,7 +1,6 @@
 'use strict';
 
-angular
-  .module('portfolioProject')
+angular.module('portfolioProject')
   .controller('ProjectCtrl', ['projectsInfo', function(info) {
     var vm = this;
     vm.pageSize = 6;

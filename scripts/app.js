@@ -6,3 +6,5 @@ angular.module('portfolioProject', ['ui.bootstrap'])
       return data.slice(start);
     }
   });
+
+angular.module('portfolioProject')

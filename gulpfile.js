@@ -46,13 +46,13 @@ function clean() {
  */
 function styles() {
   return gulp.src(paths.styles.src)
-    .pipe(sass())
-    .pipe(cleanCSS())
-    // pass in options to the stream
-    .pipe(rename({
-      basename: 'main',
-      suffix: '.min'
-    }))
+    // .pipe(sass())
+    // .pipe(cleanCSS())
+    // // pass in options to the stream
+    // .pipe(rename({
+    //   basename: 'main',
+    //   suffix: '.min'
+    // }))
     .pipe(gulp.dest(paths.styles.dest));
 }
 

@@ -17,18 +17,6 @@ var paths = {
     src: './scripts/**/*.js',
     dest: 'assets/scripts/'
   },
-  // images: {
-  //   src: './img/**/*.{jpg,jpeg,png}',
-  //   dest: 'build/img/'
-  // },
-  // info: {
-  //   src: './projects/**/*.json',
-  //   dest: 'build/prj/'
-  // }
-  // views: {
-  //   src: './views/**/*.html',
-  //   dest: 'build/views/'
-  // }
 };
 
 /* Not all tasks need to use streams, a gulpfile is just another node program
@@ -63,25 +51,6 @@ function scripts() {
     .pipe(concat('main.min.js'))
     .pipe(gulp.dest(paths.scripts.dest));
 }
-
-// function images() {
-//   return gulp.src(paths.images.src)
-//     .pipe(gulp.dest(paths.images.dest));
-// }
-
-// function watch() {
-//   gulp.watch(paths.images.src, images);
-// }
-//
-// function info() {
-//   return gulp.src(paths.info.src)
-//     .pipe(gulp.dest(paths.info.dest));
-// }
-
-// function views() {
-//   return gulp.src(paths.views.src)
-//     .pipe(gulp.dest(paths.views.dest));
-// }
 
 function watch() {
   browserSync.init({

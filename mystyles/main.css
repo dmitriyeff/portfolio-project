@@ -7026,9 +7026,6 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   scroll-behavior: smooth; }
 
-body {
-  font-size: 1.2rem; }
-
 h4 {
   padding-top: 0.7rem; }
 
@@ -7069,9 +7066,6 @@ ul {
 
 .lead {
   font-weight: normal; }
-
-.navbar {
-  height: 80px; }
 
 .one-edge-shadow {
   -webkit-box-shadow: 0 8px 6px -6px black;

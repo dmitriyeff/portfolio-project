@@ -46,21 +46,21 @@ function clean() {
  */
 function styles() {
   return gulp.src(paths.styles.src)
-    // .pipe(sass())
-    // .pipe(cleanCSS())
-    // // pass in options to the stream
-    // .pipe(rename({
-    //   basename: 'main',
-    //   suffix: '.min'
-    // }))
+    .pipe(sass())
+    .pipe(cleanCSS())
+    // pass in options to the stream
+    .pipe(rename({
+      basename: 'main',
+      suffix: '.min'
+    }))
     .pipe(gulp.dest(paths.styles.dest));
 }
 
 function scripts() {
   return gulp.src(paths.scripts.src, { sourcemaps: true })
-    // .pipe(babel())
-    // .pipe(uglify())
-    // .pipe(concat('main.min.js'))
+    .pipe(babel())
+    .pipe(uglify())
+    .pipe(concat('main.min.js'))
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
@@ -85,7 +85,7 @@ function scripts() {
 
 function watch() {
   browserSync.init({
-    port: 3002,
+    port: 3001,
     server: {
       baseDir: './'
     }
@@ -105,7 +105,6 @@ var build = gulp.series(clean, gulp.parallel(styles, scripts));
  */
 exports.clean = clean;
 exports.styles = styles;
-// exports.views = views;
 exports.scripts = scripts;
 exports.watch = watch;
 exports.build = build;

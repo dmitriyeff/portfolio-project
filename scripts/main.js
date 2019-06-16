@@ -19,7 +19,7 @@ function topFunction() {
 
 // Scroll to project section
 function scrollProject() {
-  const projectLocation = "#project-section";
+  var projectLocation = "#project-section";
   if (window.location.href !== projectLocation) {
       window.location.href = projectLocation;
   }

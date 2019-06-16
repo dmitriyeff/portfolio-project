@@ -7200,3 +7200,7 @@ footer {
 .page-link:active, .page-link:focus {
   outline: 0;
   box-shadow: 0 0 0 0; }
+
+.photo {
+  margin: 10px;
+}

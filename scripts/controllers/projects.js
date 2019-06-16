@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('portfolioProject')
-  .controller('ProjectCtrl', ['projectsInfo', '$location', '$anchorScroll', function(info) {
+  .controller('ProjectCtrl', ['projectsInfo', function(info) {
     var vm = this;
     vm.pageSize = 6;
     vm.currentPage = 1;

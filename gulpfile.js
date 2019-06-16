@@ -7,6 +7,7 @@ var rename = require('gulp-rename');
 var cleanCSS = require('gulp-clean-css');
 var del = require('del');
 var jsonminify = require('gulp-jsonminify');
+var imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
 var paths = {

@@ -16,3 +16,11 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
+
+// Scroll to project section
+function scrollProject() {
+  const projectLocation = "#project-section";
+  if (window.location.href !== projectLocation) {
+      window.location.href = projectLocation;
+  }
+};

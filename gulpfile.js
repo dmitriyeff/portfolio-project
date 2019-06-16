@@ -46,8 +46,9 @@ function clean() {
  * Define our tasks using plain functions
  */
  function images() {
-   return gulp.src(paths.images.src)
-     .pipe(gulp.dest(paths.images.dest));
+   return gulp.src(paths.images.src, {since: gulp.lastRun(images)})
+   .pipe(imagemin({optimizationLevel: 5}))
+   .pipe(gulp.dest(paths.images.dest));
  }
 
 function views() {

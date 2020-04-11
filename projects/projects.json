@@ -1,5 +1,12 @@
 [
   {
+    "id": "mft",
+    "name": "Website with Blog section",
+    "description": "Website created on the Wordpress.",
+    "img": "img/mft.png",
+    "url": "https://mft.ee"
+  },
+  {
     "id": "memory-game",
     "name": "Memory Game",
     "description": "Built an interactive card matching game with combined skills in HTML, CSS, and JavaScript.",

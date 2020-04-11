@@ -21,6 +21,8 @@ function topFunction() {
 function scrollProject() {
   var projectLocation = "#project-section";
   if (window.location.href !== projectLocation) {
+    setTimeout(function() {
       window.location.href = projectLocation;
+    }, 500);
   }
 };
